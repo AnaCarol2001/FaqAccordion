@@ -10,3 +10,11 @@ Users should be able to:
 - Navigate the questions and hide/show answers using keyboard navigation alone
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+
+### Useful resources
+
+- [Accordion Example - ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/)
+- [Details / Summary Are Not [insert control here]](https://adrianroselli.com/2019/04/details-summary-are-not-insert-control-here.html)
+- [Build a responsive, animated, accessible accordion that looks pretty good - Kevin Powell](https://youtu.be/WJERnXiFFug?si=fNtPL2gyQ4M20qlD)
+- [Building a resilient frontend using progressive enhancement - GOV.UK](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)
+- [Accordion - GOV.UK](https://design-system.service.gov.uk/components/accordion/)
