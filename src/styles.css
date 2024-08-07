@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf),
+    url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+  font-weight: 400 700;
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pink-100: hsl(275, 100%, 97%);
+  --clr-gray-purple: hsl(292, 16%, 49%);
+  --clr-purple-800: hsl(292, 42%, 14%);
+  --ff-work: "WorkSans", "sans-serif";
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+button {
+  line-height: 1.1;
+}
+
+button {
+  font: inherit;
+}
+
+abbr[title] {
+  text-decoration: none;
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* COMPONENTS */
+.banner {
+  width: 100%;
+  height: clamp(233px, 15vw + 10rem, 320px);
+  background: url(./assets/images/background-pattern-mobile.svg) center
+    no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
+}
+
+.accordion-container {
+  background-color: white;
+  padding: clamp(1.5rem, 1.5vw + 1rem, 2rem);
+  max-width: 600px;
+  margin-inline: auto;
+  margin-top: -18vh;
+  border-radius: clamp(0.5rem, 1vw + 0.1rem, 1rem);
+}
+
+.accordion-container > h1 svg {
+  max-width: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  aspect-ratio: 1;
+}
+
+.accordion-container-title {
+  color: var(--clr-purple-800);
+  font-size: clamp(2rem, 2.5vw + 1.4rem, 3.5rem);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion {
+  color: var(--clr-gray-purple);
+}
+
+.accordion:not(:last-child) {
+  border-bottom: 1px solid var(--clr-pink-100);
+}
+
+.accordion h3 {
+  color: var(--clr-purple-800);
+  font-size: clamp(1rem, 0.6vw + 0.8rem, 1.125rem);
+}
+
+.accordion__content {
+  font-size: clamp(0.875rem, 0.7vw + 0.6rem, 1rem);
+}
+
+/* LAYOUT */
+
+main {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--clr-white);
+  width: 100%;
+  padding: 1em;
+  margin-top: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--clr-gray-purple);
+}
+
+footer a {
+  color: var(--clr-purple-800);
+}
+
+/* PAGE */
+.page {
+  font-family: var(--ff-work);
+  background-color: var(--clr-pink-100);
+  display: grid;
+  grid-template-rows: auto;
+}
