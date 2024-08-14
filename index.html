@@ -114,14 +114,6 @@
       </p>
     </footer>
 
-    <!-- <svg class="icon">
-      <use xlink:href="#icon-minus"></use>
-    </svg><svg class="icon">
-      <use xlink:href="#icon-plus"></use>
-    </svg><svg class="icon">
-      <use xlink:href="#icon-star"></use>
-    </svg> -->
-
     <svg width="0" height="0" class="hidden" hidden>
       <symbol
         xmlns="http://www.w3.org/2000/svg"
@@ -157,5 +149,26 @@
         ></path>
       </symbol>
     </svg>
+
+    <template id="accordion-button-template">
+      <button type="button">
+        <span data-id="text"></span>
+        <svg aria-hidden="true"></svg>
+      </button>
+    </template>
+
+    <template id="icon-minus-template">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-minus"></use>
+      </svg>
+    </template>
+
+    <template id="icon-plus-template">
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-plus"></use>
+      </svg>
+    </template>
+
+    <script src="./src/app.js"></script>
   </body>
 </html>
