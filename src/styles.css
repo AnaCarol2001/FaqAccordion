@@ -69,17 +69,17 @@ abbr[title] {
   border-radius: clamp(0.5rem, 1vw + 0.1rem, 1rem);
 }
 
-.accordion-container > h1 svg {
-  max-width: clamp(1.5rem, 2vw + 1rem, 2.5rem);
-  aspect-ratio: 1;
-}
-
-.accordion-container-title {
+.accordion-container__title {
   color: var(--clr-purple-800);
   font-size: clamp(2rem, 2.5vw + 1.4rem, 3.5rem);
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.accordion-container__title svg {
+  max-width: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  aspect-ratio: 1;
 }
 
 .accordion {
@@ -90,7 +90,7 @@ abbr[title] {
   border-bottom: 1px solid var(--clr-pink-100);
 }
 
-.accordion h3 {
+.accordion__panel__heading {
   color: var(--clr-purple-800);
   font-size: clamp(1rem, 0.6vw + 0.8rem, 1.125rem);
 }
