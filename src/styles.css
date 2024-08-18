@@ -121,6 +121,17 @@ abbr[title] {
 
 .accordion__content {
   font-size: clamp(0.875rem, 0.7vw + 0.6rem, 1rem);
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms ease-in-out;
+}
+
+.accordion__content > div {
+  overflow: hidden;
+}
+
+.accordion__content[aria-hidden="false"] {
+  grid-template-rows: 1fr;
 }
 
 /* LAYOUT */

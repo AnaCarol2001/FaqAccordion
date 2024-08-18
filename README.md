@@ -18,3 +18,4 @@ Users should be able to:
 - [Build a responsive, animated, accessible accordion that looks pretty good - Kevin Powell](https://youtu.be/WJERnXiFFug?si=fNtPL2gyQ4M20qlD)
 - [Building a resilient frontend using progressive enhancement - GOV.UK](https://www.gov.uk/service-manual/technology/using-progressive-enhancement)
 - [Accordion - GOV.UK](https://design-system.service.gov.uk/components/accordion/)
+- [The simple trick to transition from height 0 to auto with CSS](https://youtu.be/B_n4YONte5A?si=__9SjczcicFS6hog)
