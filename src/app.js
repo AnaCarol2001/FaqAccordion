@@ -5,8 +5,8 @@ function init() {
 init();
 
 function accordionComponent() {
-  const iconMinus = getElement("#icon-minus-template").content;
-  const iconPlus = getElement("#icon-plus-template").content;
+  const iconMinus = getTemplate("#icon-minus-template");
+  const iconPlus = getTemplate("#icon-plus-template");
   const accordionGroup = getElement("#accordionGroup");
   const accordions = getAllElements(".accordion", accordionGroup);
   const initComponent = () => {
@@ -27,7 +27,7 @@ function accordionComponent() {
    * Adds the button and the necessary arias to all accordions.
    */
   function addAccordionControls() {
-    const accordionButton = getElement("#accordion-button-template").content;
+    const accordionButton = getTemplate("#accordion-button-template");
 
     accordions.forEach((accordion) => {
       const btnHeadingTemplate = accordionButton.cloneNode("true");
@@ -59,21 +59,28 @@ function accordionComponent() {
       const accordionContent = getElement(".accordion__content", accordion);
 
       getElement("svg", accordionBtn).replaceChildren(iconPlus.cloneNode(true));
-      accordionBtn.setAttribute("aria-expended", false);
-      accordionContent.setAttribute("hidden", "");
+      accordionBtn.setAttribute("aria-expanded", false);
+      accordionContent.setAttribute("aria-hidden", "true");
     });
 
     const activeAccordionBtn = getElement("button", accordion);
 
-    activeAccordionBtn.setAttribute("aria-expended", "true");
+    activeAccordionBtn.setAttribute("aria-expanded", "true");
     getElement("svg", activeAccordionBtn).replaceChildren(
       iconMinus.cloneNode(true)
     );
-    getElement(".accordion__content", accordion).removeAttribute("hidden");
+    getElement(".accordion__content", accordion).setAttribute(
+      "aria-hidden",
+      "false"
+    );
   }
 }
 
 /* UTILITY FUNCTION */
+
+function getTemplate(selector) {
+  return getElement(selector).content;
+}
 
 function getElement(selector, parentElement = document) {
   const element = parentElement.querySelector(selector);
