@@ -21,6 +21,7 @@
       as="image"
       type="image/svg+xml"
       href="./src/assets/images/background-pattern-mobile.svg"
+      media="(max-width:767px)"
     />
 
     <link
@@ -28,6 +29,7 @@
       as="image"
       type="image/svg+xml"
       href="./src/assets/images/background-pattern-desktop.svg"
+      media="(mix-width:768px)"
     />
 
     <link
@@ -40,15 +42,7 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body class="page">
-    <div class="banner" aria-hidden="true">
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcset="./src/assets/images/background-pattern-mobile.svg"
-        />
-        <img src="./src/assets/images/background-pattern-desktop.svg" alt="" />
-      </picture>
-    </div>
+    <div class="banner" aria-hidden="true"></div>
     <main>
       <div id="accordionGroup" class="accordion-container">
         <h1 class="accordion-container__title">
