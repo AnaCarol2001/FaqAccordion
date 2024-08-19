@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a solution by Ana Carolina to the FAQ accordion challenge on Frontend Mentor"
+    />
+    <title>Frontend Mentor | FAQ accordion</title>
 
     <link
       rel="icon"
@@ -11,11 +16,39 @@
       href="./public/favicon-32x32.png"
     />
 
+    <link
+      rel="preload"
+      as="image"
+      type="image/svg+xml"
+      href="./src/assets/images/background-pattern-mobile.svg"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      type="image/svg+xml"
+      href="./src/assets/images/background-pattern-desktop.svg"
+    />
+
+    <link
+      rel="preload"
+      href="./src/assets/fonts/WorkSans-VariableFont_wght.ttf"
+      as="font"
+      crossorigin
+    />
+
     <link rel="stylesheet" href="./src/styles.css" />
-    <title>Frontend Mentor | FAQ accordion</title>
   </head>
   <body class="page">
-    <div class="banner" aria-hidden="true"></div>
+    <div class="banner" aria-hidden="true">
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./src/assets/images/background-pattern-mobile.svg"
+        />
+        <img src="./src/assets/images/background-pattern-desktop.svg" alt="" />
+      </picture>
+    </div>
     <main>
       <div id="accordionGroup" class="accordion-container">
         <h1 class="accordion-container__title">
@@ -177,6 +210,6 @@
       </svg>
     </template>
 
-    <script src="./src/app.js"></script>
+    <script src="./src/app.js" defer></script>
   </body>
 </html>
