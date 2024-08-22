@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/AnaCarol2001/FaqAccordion](https://github.com/AnaCarol2001/FaqAccordion)
+- Live Site URL: [https://anacarol2001.github.io/FaqAccordion/](https://anacarol2001.github.io/FaqAccordion/)
 
 ## My process
 
